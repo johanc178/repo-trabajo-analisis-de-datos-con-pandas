@@ -21,29 +21,29 @@ df = pd.DataFrame(data)
 
 primeros_registros = df.iloc[0:5, :]
 
-# 2. Punto Central: Todos los datos de la fila en la posición 24
+
 punto_central = df.iloc[24, :]
 
-# 3. Columnas Alternas: Índices 0, 2 y 5 para las primeras 10 filas
+
 columnas_alternas = df.iloc[0:10, [0, 2, 5]]
 
-# 4. Dato Específico: Fila 10, columna 3
+
 dato_especifico = df.iloc[10, 3]
 
-# 5. Último Decil: Últimas 10 filas usando slicing negativo
+
 ultimo_decil = df.iloc[-10:, :]
 
-# 6. Subsección de Matriz: Fila 15 a 25 y columna 1 a 4 (límite superior +1)
+
 subseccion_matriz = df.iloc[15:26, 1:5]
 
-# 7. Propiedades Finales: Todas las filas, solo últimas 2 columnas
+
 propiedades_finales = df.iloc[:, -2:]
 
-# 8. Muestreo Estratificado: Filas 0, 10, 20, 30, 40 y columnas 0 y 5
+
 muestreo_estratificado = df.iloc[[0, 10, 20, 30, 40], [0, 5]]
 
-# 9. Segmento Final: Primeras 3 columnas de las últimas 10 filas
+
 segmento_final = df.iloc[-10:, 0:3]
 
-# 10. Inversión: Filas en orden inverso
+
 inversion = df.iloc[::-1, :]
